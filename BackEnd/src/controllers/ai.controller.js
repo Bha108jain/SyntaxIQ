@@ -1,4 +1,4 @@
-const aiServices = require("../services/ai.service");
+const aiServices = require(__dirname + "/../services/ai.service");
 
 module.exports.getReview = async (req, res) => {
   const code = req.body.code;
