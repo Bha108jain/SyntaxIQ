@@ -1,5 +1,5 @@
 const express = require("express");
-const aiController = require("../controllers/ai.controller");
+const aiController = require(__dirname + "/../controllers/ai.controller.js");
 
 const router = express.Router();
 
