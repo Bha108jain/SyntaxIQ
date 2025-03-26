@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:5177", "https://syntax-iq-ai.vercel.app"], // Allow frontend URLs
+    origin: process.env.CORS,
     credentials: true,
   })
 );
