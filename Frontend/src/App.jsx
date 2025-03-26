@@ -20,7 +20,7 @@ function App() {
 
   async function reviewCode() {
     const response = await axios.post(
-      `${import.meta.env.VITE_APP_BACKEND_URL}/ai/get-review`,
+      `https://syntax-iq-ol8s.vercel.app/ai/get-review`,
       {
         code,
       }
