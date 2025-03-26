@@ -4,7 +4,13 @@ const aiRoutes = require("./src/routes/ai.routes");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5177", "https://syntax-iq-ai.vercel.app"], // Allow frontend URLs
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
